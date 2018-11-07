@@ -18,6 +18,7 @@ public class AdventureGame : MonoBehaviour
     const int COSTWOOL = 2;
     const double DRINKWATER = 1.5;
     const double DEHYDRATIONSTEP = 0.5;
+    const int MINWOOLTOCOLLECT = 1;
 
     const string INFOALARM = "Info.Alarm";
     const string KNITDO = "Knit.Do";
@@ -208,7 +209,7 @@ public class AdventureGame : MonoBehaviour
 
         if ((currentState.name == COLLECTINFO || currentState.name == COLLECTDO) && nextState.name == COLLECTDO)
         {
-            int nbrWool = RandomState.getrandom.Next(1, 3);
+            int nbrWool = RandomState.getrandom.Next(MINWOOLTOCOLLECT, 3);
             collectedWool += nbrWool;
             collectedWool = Clamp(collectedWool, 0, 5);
             Debug.Log("Collected " + nbrWool + "kg wool: current wool count: " + collectedWool);
