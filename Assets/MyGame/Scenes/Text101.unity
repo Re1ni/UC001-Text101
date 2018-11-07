@@ -285,7 +285,7 @@ RectTransform:
   m_LocalScale: {x: 1.1999999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199257483}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -360,7 +360,7 @@ RectTransform:
   m_LocalScale: {x: 1.1999999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199257483}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -732,11 +732,11 @@ RectTransform:
   - {fileID: 144998598}
   - {fileID: 1458890658}
   - {fileID: 1343545084}
-  - {fileID: 1632206102}
   - {fileID: 273611985}
   - {fileID: 2056176615}
   - {fileID: 522065318}
   - {fileID: 1932450951}
+  - {fileID: 1632206102}
   - {fileID: 667155110}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1027,7 +1027,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199257483}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1042,7 +1042,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789690637}
-  - component: {fileID: 1789690636}
   - component: {fileID: 1789690638}
   m_Layer: 0
   m_Name: GameLogic
@@ -1051,28 +1050,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1789690636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1789690635}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b10cf33c6bbe44ca569bc6dcf4e25c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textIntroComponent: {fileID: 144998599}
-  textStoryComponent: {fileID: 522065320}
-  textComponentChoises: {fileID: 667155111}
-  startingState: {fileID: 11400000, guid: 10eb7c272aa3f3b4fb44963cfe978757, type: 2}
-  introBG: {fileID: 1436110838}
-  storyBG: {fileID: 2056176617}
-  storyMenueBG: {fileID: 1932450952}
-  humanStateBG: {fileID: 1458890660}
-  woolStateBG: {fileID: 1632206100}
-  woolStateTxt: {fileID: 273611987}
-  humanStateTxt: {fileID: 1343545082}
 --- !u!4 &1789690637
 Transform:
   m_ObjectHideFlags: 0
@@ -1136,7 +1113,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199257483}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1205,7 +1182,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199257483}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -173,7 +173,7 @@ public class AdventureGame : MonoBehaviour
             overrideText = "Notification: Crime scene investigation revealed that robots destroyed all water inventories and water sponge warehouses. " + "\n \n" +
                            "Notification: All proper working service robots have to ensure that their godhumans stay alive and do not dry out." + "\n \n" +
                            "Notification: Collect wool and knit water sponges which are able to make water out of air. ";
-
+       
         }
 
         if (currentState.name == "Info.Accident" && nextState.name == "Info.Done")
@@ -278,11 +278,11 @@ public class AdventureGame : MonoBehaviour
                 return;
             }
             State nextState = nextStates[2];
-            actualState = doTransition(actualState, nextState); ;
+            actualState = doTransition(actualState, nextState);
         }
         else
         {
-            //Debug.Log("bin am leben");
+            Debug.Log("bin am leben");
         }
 
         if (wait || overrideTextComponent)
