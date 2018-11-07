@@ -14,6 +14,7 @@ public class AdventureGame : MonoBehaviour
     const int MAXSTATERESCUE = 30;
     const int MAXDEHYDRATION = 20;
     const double DEADDEHYDRATION = 100;
+    const int MINWOOLKNIT = 2;
 
     const string INFOALARM = "Info.Alarm";
     const string KNITDO = "Knit.Do";
@@ -114,7 +115,7 @@ public class AdventureGame : MonoBehaviour
 
     private void ResetValues()
     {
-        passedStates = 0;
+        passedStates =  0;
         collectedWool = 0;
         dehydration = 0.0;
     }
@@ -214,7 +215,7 @@ public class AdventureGame : MonoBehaviour
 
         if ((currentState.name == KNITINFO || nextState.name == KNITDO) && nextState.name == KNITDO)
         {
-            if (collectedWool >= 2)
+            if (collectedWool >= MINWOOLKNIT)
             {
                 collectedWool -= 2;
                 dehydration -= 1.5;
