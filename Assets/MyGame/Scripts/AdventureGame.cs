@@ -31,6 +31,7 @@ public class AdventureGame : MonoBehaviour
     const string INFOHUMAN = "Info.Human";
     const string INFOACCIDENT = "Info.Accident";
     const string COLLECT = "Collect";
+    const string END = "End";
 
     //private static readonly System.Random getrandom = new System.Random(123);
 
@@ -45,8 +46,10 @@ public class AdventureGame : MonoBehaviour
     public Image woolStateBG;
     public Text woolStateTxt;
     public Text humanStateTxt;
+    public GameObject loadSceneObject;
 
 
+    private SceneLoader sceneLoader;
     private int passedStates;
     private int collectedWool;
     private double dehydration;
@@ -82,6 +85,7 @@ public class AdventureGame : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        sceneLoader = loadSceneObject.GetComponent<SceneLoader>();
         actualState = startingState;
         textIntroComponent.text = actualState.GetStateStory();
         textComponentChoices.text = actualState.GetStateStoryMenue();
@@ -129,6 +133,11 @@ public class AdventureGame : MonoBehaviour
 
         passedStates += 1;
         dehydration = (dehydration < MAXDEHYDRATION) ? dehydration += DEHYDRATIONSTEP : dehydration = MAXDEHYDRATION;
+
+        if (nextState.name == END)
+        {
+            sceneLoader.LoadLeaveScene();
+        }
 
         if (passedStates == MAXSTATERESCUE)
         {
